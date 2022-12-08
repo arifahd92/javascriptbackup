@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            display: grid;
+            width: 50%;
+            margin: 100px auto;
+            grid-template-columns:  repeat(6 ,60px);
+            grid-template-rows: 50px 50px 50px 50px 50px 50px;
+            grid-gap: 0ch;
+        }
+        #answer{
+            grid-column: 1/-1;
+            background-color: aqua;
+        }
+        #clr{
+            grid-column: 1/-1; 
+            color: wheat;
+            background-color: black;
+            /* grid-column:4/6 ; */
+        }
+        input{
+            background-color: blue;
+            color: yellow;
+
+        }
+        button:hover{
+            background-color: palegreen;
+        }
+        #eql{
+            grid-column:4/6 ;
+        }
+        #pls{
+            grid-row: 3/5;
+            grid-column: 6/7;
+        }
+    </style>
+</head>
+<body>
+    <form name="forms">
+        <input type="text" name="ans" id="answer">
+        <input type="button" value="1" onclick="forms.ans.value+= '1' ">
+        <input type="button" value="2" onclick="forms.ans.value+= '2' ">
+        <input type="button" value="3" onclick="forms.ans.value+= '3' ">
+        <input type="button" value="4" onclick="forms.ans.value+= '4' ">
+        <input type="button" value="5" onclick="forms.ans.value+= '5' ">
+        <input type="button" value="6" onclick="forms.ans.value+= '6' ">
+        <input type="button" value="7" onclick="forms.ans.value+= '7' ">
+        <input type="button" value="8" onclick="forms.ans.value+= '8' ">
+        <input type="button" value="9" onclick="forms.ans.value+= '9' ">
+        <input type="button" value="0" onclick="forms.ans.value+= '0' ">
+
+        <input id="pls" type="button" value="+" onclick="forms.ans.value+= '+' ">
+        <input type="button" value="-" onclick="forms.ans.value+= '-' ">
+        <input type="button" value="*" onclick="forms.ans.value+= '*' "> 
+        <input type="button" value="/" onclick="forms.ans.value+= '/' ">
+        <input type="button" value="." onclick="forms.ans.value+= '.' "> 
+        <input id="eql" type="button" value="=" onclick="forms.ans.value = eval(forms.ans.value)">
+        <input type="button" value="clearAll" id= "clr" onclick="forms.ans.value= '' "> 
+    </form>
+</body>
+</html>

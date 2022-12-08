@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0; padding: 0; border-box;
+        }
+        main{
+            
+            width: 50%;
+            
+            margin: 100px autoff;
+            /* width kam kiya left se exist karna shuru karega */
+           /* margin left aur right ki value auto dene seleft right me equal equal distance chhodega */
+            /* margin: 50px auto; */
+            border: 3px solid greenyellow;
+            display: grid;
+           grid-template-rows: 150px 150px 150px 150px;
+           grid-template-columns: repeat(3,1fr) 150px;
+        /* row pxl me height coloumn pxl se width of each block
+        agar kisi block ki height badhani hai to us block ko target and grid-row */
+        grid-gap: 6px;
+
+        }
+       .flex1{
+        background-color: rgb(220, 118, 16);
+        grid-column: 1/-1;
+       }
+        /* ban kya raha hai isase matlab nhi chhek kya raha hai ye imp hai */
+       /* }yaha poora coloumn chheka */
+       .flex2{
+        background-color: red;
+       }
+       .flex3{
+        background-color: blue;
+       }
+       .flex4{
+        background-color: rgb(205, 16, 16);
+       }
+       .flex5{
+        background-color: blueviolet;
+        grid-row: 2/4;
+        /* grid rowme line no. of row doby default left me le jayega */
+        grid-column: 4/5;
+        /* coloumn k line no. 4 and line no 5 me aajayega */
+       
+       }
+       .flex6{
+        background-color: cyan;
+       grid-column: 1/4;
+       }
+       .flex7{
+        background-color: magenta;
+        grid-column: 1/-1;
+       }
+       div{
+        text-align:center;
+       padding: 70px;
+       }
+       button{
+        height: 50px;
+        width: 50px;
+        background-color: rgb(40, 213, 109);
+       }
+       button:hover{
+        background-color: red;
+        color: yellow;
+       }
+       button:visited{
+        background-color: blue;
+       }
+    </style>
+</head>
+<body>
+<main>
+    <div class="flex1"><button>1</button></div>
+    <div class="flex2"><button>2</button></div>
+    <div class="flex3"><button>3</button></div>
+    <div class="flex4"><button>4</button></div>
+    <div class="flex5"><button>5</button></div>
+     <div class="flex6"><button>6</button></div>
+    <div class="flex7"><button>7</button></div>
+</main> 
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>spread and rest</h1>
+    <script>
+
+        // const sum =(a,b,c)=>{
+        //   return(a+b)//op 6
+        // }
+        // let arr=[1,5,7]
+        // let call = sum(...arr)
+        // console.log(call)
+        // **************
+
+    //     const sum =(a,b,...c)=>{//here it will be called rest parametre
+    //   console.log(a+b)
+    //   console.log(c)//[7,8,9], c will become an array
+    //     }
+    //     let arr=[1,5,7,8,9]
+    //     sum(...arr)
+    // ****************************
+
+    // pure rest with reduce method
+    function sum(a,...rest){
+const result = rest.reduce((acc,item)=>{
+    return acc+item//ye return reduce k andar likhe anonymos fxn ka hai line 32 se pahle ka likha hua exicute nhi hoga
+    console.log(result)//no use of this because it is after return
+},a)//here a is optional a k pass ayega 10 jo k accumulator ko assign ho jayega agar a nhi denge to 0 assign hoga
+ console.log(result) //ye sum fxn k andar hai so it will be exicuted
+//  return 0//main fxn ka return
+    }
+  
+      console.log(sum(10,20,30,50))//undefide bhi print hoga//BABEL is javascript  compiler
+    </script>
+    
+</body>
+</html>

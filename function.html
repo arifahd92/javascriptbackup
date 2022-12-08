@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>i m function.html</h1> 
+   <script>
+    let a = 30;// global variable
+    function check(){
+    //    let a=20// sirf iske andar hi
+        a=20// globally a ko update kar dega agar iske fxn ko call kiya
+        console.log(a)
+    }
+    check() //ye call hua matlab a ko 20 assign ho gaya ab chahe jaha se bhi call karo a ki value 20 hi milegi
+    console.log(a)
+    function check2(){
+        console.log(a)
+    }
+    check2()
+
+
+    //********************
+    //myfunc()// op type error my func not a function, iske pahle tak ka code exicute hoga baad ka nhi
+    console.log(myfunc)//undefined in case of var declaration reference error in case of let or const declaration
+    var myfunc=function(){//exact same behaviour like a variable/it is known as fxn expression
+        console.log("first")
+    }
+
+    console.log(myfunc2)
+    myfunc2()
+    function myfunc2(){
+        console.log(a)
+    }
+    b=300// let consider karega 
+    
+    console.log(b)
+    
+    let c = 30 
+    let c = 60// syntax error in case of syntax error and in case of syntax error not a single line will be exicuted
+    
+   </script>
+</body>
+</html>

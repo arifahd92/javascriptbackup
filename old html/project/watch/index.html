@@ -1,0 +1,188 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog clock</title>
+    <script defer src="watch.js"></script>
+</head>
+<style>
+    body{
+        background-color: yellow;
+    }
+    .container{
+        position: relative;
+        height: 40vw;
+        width: 40vw;
+       border: 5px solid rgb(167, 156, 156);
+       border-radius: 50%;
+        margin: auto;
+        /* background-image: url("https://th.bing.com/th/id/OIP.HFruVvfpc2PzBSNs--OHMwHaHa?pid=ImgDet&w=2016&h=2016&rs=1"); */
+        background-size: 40vw;
+        margin-top: 10vh;
+        z-index: 100;
+        background-color: rgb(16, 16, 16);
+    }
+
+    .cntr{
+        position: absolute;
+        background-color: white;
+        border: 3px solid red;
+        border-radius: 50%;
+        height: 1vw;
+        width: 1vw;
+        left: 49%;
+        top: 49.2%;
+    }
+    .twl{
+        position: absolute;
+        left: 50%;
+        color: aqua;
+      font-size: 2.5vw;
+      font-weight: bold;
+      
+
+    }
+    .three{
+        position: absolute;
+        /* left: 50%; */
+        top: 50%;
+        right: 0%;
+        color: aqua;
+        font-size: 2.5vw;
+      font-weight: bold;
+
+    }
+    .nine{
+        position: absolute;
+        /* left: 50%; */
+        top: 50%;
+        left: 0%;
+      color: aqua;
+      font-size: 2.5vw;
+      font-weight: bold;
+
+    }
+    .six{
+        position: absolute;
+        /* left: 50%; */
+        left: 50%;
+        bottom: 0%; 
+        color: aqua;
+        font-size: 2.5vw;
+      font-weight: bold;
+    }
+
+    .h{
+        transform-origin: bottom;
+        border: 1px solid red;
+      border-radius: 3px;
+        /* display: none; */
+        position: absolute;
+        height: 15.5vw;
+        width: 0.6vw;
+        background-color: blue;
+        left:50.5%;
+        top:4.8vw
+    
+        
+    }
+    .m{
+        transform-origin: bottom;
+        border: 1px solid red;
+      border-radius: 3px;
+        /* display: none; */
+        position: absolute;
+        height: 17vw;
+        width: 0.6vw;
+        background-color: rgb(67, 214, 30);
+        left:50.3%;
+        top:3.4vw
+
+    }
+    .s{
+        transform-origin: bottom;
+        border: 1px solid red;
+      border-radius: 10px;
+        /* transition: all 1s ease-in-out; */
+        position: absolute;
+        height: 18.5vw;
+        width: 0.3vw;
+        border-radius: 3px ;
+        background-color: rgb(255, 242, 0);
+        left:50.3%;
+        top:1.8vw
+        
+        
+    }
+    
+    #digital{
+     
+      width: 250px;
+      height: 3vh;
+      /* background-color: green; */
+      color: white;
+      position: absolute;
+      right: 0vw;
+      top: 0vw;
+    }
+    @media screen and (max-width:820px){
+      .container{
+       top: 15vh;
+       height: 70vw;
+       width: 70vw;
+      }
+      .cntr{
+        height: 2vw;
+        width: 2vw;
+        left: 50%;
+        top: 47%;
+      }
+      .s,.m{
+       top: 7.5vw;
+       left: 51.5%;
+       width: 1.2vw;
+      }
+      .s{
+        width: .4vw;
+      }
+      .h{
+        top: 10vw;
+       left: 52%;
+       width:1.2vw ; 
+       height: 24vw;
+      }
+      .m{
+        height: 26vw;
+      }
+      .s{
+        height: 28.9vw;
+        top:5vw ;
+      }
+      .s,.m,.h{
+        border-radius: 5px;
+      }
+      .three,.twl,.six,.nine{
+        font-size: 4.5vw;
+      }
+    }
+</style>
+<body>
+    <div class="container">
+       <div class="twl">12</div>
+       <div class="three">3</div>
+       <div class="six">6</div>
+       <div class="nine">9</div>
+       <div class="cntr"></div>
+       <div class="h" id="hour"></div>
+       <div class="m" id="minute"></div>
+       <div class="s" id="second"></div>
+      
+      </div>
+   
+   <h2 id ="digital" style="color:black ;"></h2>
+</body>
+</html>

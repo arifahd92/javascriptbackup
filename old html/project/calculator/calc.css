@@ -1,0 +1,122 @@
+body{
+    /* height: 100vh; */
+     background-size: 100%;
+     background-color: aquamarine;
+     }
+     .btn11{
+      padding-top: 60px;
+     }
+      main{
+      display: grid;
+      grid-template-rows: repeat(7,80px);
+      grid-template-columns: repeat(4,80px);
+     /* border:3px solid #ffba2f; */
+     border-radius: 8px;
+     width: 20vw;
+     margin-left: 38vw ;
+     margin-top: 18vh;
+     
+     height: 50vh;
+      }
+      input{
+          grid-column: 1/-1;
+      }
+      div{
+          border-left: 3px solid #ffba2f;
+          border: 3px solid #ffba2f;
+          border-radius: 10px;
+          text-align: center;
+          color: white;
+          padding-top: 3vh;
+          background-color: black;
+         font-size:x-large ;
+         cursor: pointer;
+      }
+  
+      div:hover{
+          /* background-color: blue; */
+          border: 5px solid red;
+          /* width: 62px; */
+      }
+      div:active{
+          background-color: yellow;
+          color: black;
+      }
+      .btn0{
+          grid-column: 2/3;
+      }
+      .btn11{
+          grid-row: 5/7;
+      }
+      #clr:hover{
+          background-color: #ff0000;
+      }
+      #clr:active{
+          background-color:yellow;
+      }
+      input{
+          border-top: 3px solid #ffba2f;
+          border-left: 3px solid #ffba2f;
+          border-right: 3px solid #ffba2f;
+          border-radius: 8px;
+          background-color: black;
+          color: rgb(229, 28, 28);
+      }
+      .btn18{
+          grid-column: 4/5;
+      }
+      .btn19{
+          grid-column: 3/3;  
+          grid-row: 6/7;
+      }
+      #scn{
+          font-size: 20px;
+          font-style: italic;
+          font-weight: bold;
+          color: yellowgreen;
+      }
+      @media screen and (max-width:990px){
+          main{
+             margin-left: 25vw;
+          }
+     @media screen and (max-width:640px){
+          main{
+              margin-left: 20vw;
+          }}
+          @media screen and (max-width:535px){
+          main{
+             margin-left: 15vw ;
+          }
+      }
+      @media screen and (max-width:420px){
+          main{
+       grid-template-rows: repeat(7,24vw);
+       grid-template-columns: repeat(4,24vw);
+       height:20vh;
+       width: 90vw;
+        margin-left: 0vw ;
+        margin-top: 12vh;
+       height: 50vh;
+          }
+          div{
+              padding-top: 8vw;
+          }
+      } 
+      @media screen and (max-width:285px){
+          main{
+       grid-template-rows: repeat(7,20vw);
+       grid-template-columns: repeat(4,20vw);
+       height:20vh;
+       width: 100vw;
+        margin-left: 5vw ;
+        margin-top: 12vh;
+       height: 50vh;
+  
+          }
+          div{
+              padding-top: 3vw;
+              font-weight: lighter;
+              font-size:large ;
+          }
+       
+      } 

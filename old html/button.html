@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    main{
+        /* border: 3px solid greenyellow; */
+        background-color: aquamarine;
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px;
+        grid-template-rows: 50px 50px 50px 50px 50px ;
+        width: 235px;
+        margin: 100px auto;
+        grid-gap: 10px;
+    }
+    button{
+        background-color:black;
+        text-align: center;
+        padding-top: 15px;
+        color: white;
+    }
+    .a15{
+        grid-row: 4/6;
+        /* grid-column: 4/5; */
+    }
+    .a14{
+        grid-column:3/5 ;
+    }
+    .a17{
+        grid-column: 3/5;
+    }
+    button:hover{
+        background-color: red;
+    }
+    button:active{
+        background-color:#14f169;
+    }
+</style>
+<body>
+    <main>
+        <button class="a1">1</button>
+        <button class="a2">2</button>
+        <button class="a3">3</button>
+        <button class="a4">4</button>
+        <button class="a5">5</button>
+        <button class="a6">6</button>
+        <button class="a7">7</button>
+        <button class="a8">8</button>
+        <button class="a9">9</button>
+        <button class="a10">0</button>
+        <button class="a11">.</button>
+        <button class="a12">/</button>
+        <button class="a13">*</button>
+        <button class="a14">-</button>
+        <button class="a15">+</button>
+        <button class="a16">(</button>
+        <button class="a17">)</button>
+    </main>
+</body>
+</html>

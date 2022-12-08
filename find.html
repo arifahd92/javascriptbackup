@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>find method</h1>
+    <input id="inpt" type="text" oninput="search()">
+    <textarea name="" id="ta" cols="30" rows="10"></textarea>
+    <ul id="list">
+
+    </ul>
+    <script>
+        let arr=["arif", "taslim", "shama", "aafreen"]
+        let inpt = document.getElementById("inpt") 
+        var res=[]
+        function search(){
+            val=inpt.value
+          console.log("first")
+            console.log(val)
+             res = arr.filter((e)=>e.startsWith(val))
+            // document.write(res)
+            console.log(res)
+            // ta.value=res
+        
+
+        for(let elm of res){
+             console.log(elm)
+        ta.value+=" " +elm
+
+
+        }
+    }
+
+    </script>
+</body>
+</html>

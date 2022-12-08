@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    //  callback fxn is a fxn that is passed as argument inside another fxn
+
+    // function callBack(a) {
+    //   console.log("im a fxn  " + a)  
+    // }
+
+    // function dup(b) {
+    //     b(3)   it is like callBack(3)  kyonk b ki abb vale main ho chuki hai
+  // }
+    // dup(callBack)// jab fxn as parameter dalte hai to paranthesis nhi lagaate
+
+
+
+
+
+
+    //VVIMP
+    // function dup(b) {
+    //     b(3)// b dup k andar likhe  fxn se replace v hua and self ko call bhi kiya [samjho bk badd usi liye ()likha hai]with parameter 3
+    // }
+
+    // dup( function callBack(a) ; //isme naam to use ho nhi raha to chaho to hata do
+    //   console.log("im a fxn  " + a)  
+    //   }
+    // )
+ 
+
+
+
+    // simple  ek fxn banao with a parameter and then chunki partamere ek fxn hoga next line me parameter k aage  paranthesis laga do aur chaho to argument bhi dedop
+
+
+    function dup(b) {
+       b(4)//b ek fxn se replace ho gaya with an argument 4
+    }
+
+    dup( a=>{   //agar benam ka fxn hai && argument ek hi pass hua hai to round bracket ki need nhi  
+      var b=3;
+    // var a
+      console.log("im a fxn  " + a+" "+b  )  
+      }
+    )
+   </script> 
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    document.write("hellow world =>> ");
+
+    document.write("<br> ");//for new line
+
+    let a=1;
+    let b=8;
+   // ==>fxn type 1 by writing "function" keyword #########
+    function sum(){
+       
+        return a+b;
+    }
+    document.write("sum of no. is" +sum()+"<br>");
+
+// fxn type 2
+// var c = sum2(){ ,var k baad likha hua variable fxn name hota hai 
+    //isme bhi fxn key word use hota hai
+//     return a+b;
+// }
+// document.write("sum of no. is" +sum2());
+
+// above commented fxn is not working
+//fxn type 2 ########
+var c= function() {
+    return a+b;
+}
+document.write("returned value is" + c())
+
+
+
+// arrow fxn is es 6 feature it is like fxn type 2 fxn keyword ke bajay arrow lagate hai 
+// note arrow () iske baad lagate hai aur aerow k baad {
+// statement aata hai
+// imp agar code one liner hai aerow fxn k andar to curly bracket  aur return keyword ki need nhi
+//}
+
+//let ya const hi use hota hai
+let arrow = ()=> a+b
+document.write("<br> "+"value of arrow fxn is=>"+arrow());
+
+
+
+let arrow2 = ()=> {
+    return a+b;
+}
+document.write("<br> "+"value of arrow2 fxn is=>"+arrow2());
+
+document.write("<br> "+"value of arrow2 fxn is=>"+arrow2());
+var z= function(){
+    document.write("arif");
+   }
+   z();
+
+   </script> 
+</body>
+</html>

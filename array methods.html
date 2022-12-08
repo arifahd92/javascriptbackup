@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+   // var arr1 = [1,2,4,5,6] 
+//     var arr2 = new Array(5)
+//     //  document.write(arr1)   //0p 1,2,4,5,6
+//     //  document.write(arr1[2]) // op 4 
+//    for(let a=0; a<5; a++){
+//     // document.write(arr1[a]+" ")
+//     let c = prompt("enter element for array2")  
+//       arr2[a]=c
+//    }
+//    
+//    document.write(arr2) 
+
+
+
+// arr1[0]="arif"//arr 1 hi poora change ho gaya 
+// document.write(arr1) //index 1 element will get replace by arif
+// delete arr1[1]
+// document.write(arr1) // arif,,4,5,6
+// document.write(arr1[1]) // undefined
+
+
+//₹₹₹₹₹₹₹₹₹₹₹₹₹₹₹₹₹₹₹ṅṅṅṅṅṅṅṅṅṅṅṅṅṅṅṅṅṅṅṅṅṅṅṅṅṅṅṅṅṅṅṅṅṅ
+
+//array method start from here
+ // 1 map method 
+
+
+var a= [1,2,3,4,5]
+//  var b =a.map((element)=>{//ek tareeke se ye loop hai ahr har baar array a ka ek ek elerment as fxn parameter pass hoga
+//     return element*10
+//})
+
+// var b=a.map(element=>10*element)//alternate of above
+var b=a.map(test)// test fxn ko call kiya isme bracket ki need nhi ,test fxn map k andar call hua so jaha bhi test fxn banega usme pahla parameter
+                                                                      // a k element hi hong  
+document.write(b) 
+function  test (element){
+return 10*element
+}
+document.write("<br>")
+
+
+//array me element as object bhi de sakte hain
+  
+var sa =[                                     //this is array of objects
+    {fname:"md",lname:"arif"},
+         {fname:"mohd",lname:"taslim"},
+         {fname:'shama',lname:"parveen"}
+        ] 
+     var d =sa.map((element)=>{//one by one saare array ewlement jayenge 
+        //return element.lname
+        return element.fname +" "+element.lname
+     })
+    //  document.write(d)// arif, taslim , parveen will be the output
+    document.write(d)
+   console.log(sa)
+ </script>
+</body>
+</html>

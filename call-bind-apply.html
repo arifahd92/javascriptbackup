@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    // var obj1 = {
+    //     fname:"arif",
+    //     lname:"razvi",
+    //     fullname:function(){                              //ye siple fxn hi hai bas object k andart hai to equal ki jagah colon hai bas let v nhi  hai
+    //     console.log(this.fname + " "+this.lname)//this rep. obj1
+    //  }
+
+    // }
+
+    // obj1.fullname()//fullname fxn k andr agar obj1 ko access karna hai ti this keyword se access hoga(this means ye ora object)
+
+// call ,when we have multiple object and properties are same then we use caal ya bind ya apply
+
+ var obj1 = {
+        fname:"arif",
+        lname:"razvi"
+    }
+
+
+
+    var obj2 = {
+        fname:"taslim",
+        lname:"hanfi"
+    }
+
+   let  fullname=function(city, state){
+         console.log(this.fname + " "+this.lname +" "+"city "+city +"  state "+state)
+        }
+
+
+     fullname.call(obj1,"chandauli","uttarpradesh")// fxn call
+     fullname.call(obj2)
+
+     fullname.apply(obj1,["chandauli","uttarpradesh"])//apply method 
+     fullname.apply(obj2,["chandauli","uttarpradesh"])//apply method 
+
+
+     //bind method 
+     let arif = fullname.bind(obj2,"chandauli","uttarpradesh")//call ki jagah bind likh kar ek variable me daala weo variable fxn ban gaya ya yun
+     //kahe ki jo hamara fxn tha wo us variable me copy ho gaya with parameter
+     console.log (arif)//op fxn
+     arif();
+    
+
+
+   </script> 
+</body>
+</html>
